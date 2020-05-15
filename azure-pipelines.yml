@@ -18,5 +18,5 @@ stages:
             organization: 'asrailuna'
             scannerMode: 'MSBuild'
             projectKey: 'asrailuna'
-            projectName: 'Project0Azure'
+            projectName: 'asrailuna.Project0Azure'
         - task: SonarCloudAnalyze@1
