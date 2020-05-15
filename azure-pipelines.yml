@@ -23,6 +23,6 @@ stages:
         - task: UseDotNet@2
           inputs:
             packageType: sdk
-            version: 3.1.201
+            version: 2.1.806
         - script: dotnet build 'Project0/Project 0/Project 0.sln'
         - task: SonarCloudAnalyze@1
