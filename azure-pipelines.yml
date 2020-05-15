@@ -11,7 +11,7 @@ stages:
     jobs:
       - job: "SonarCloud"
         steps:
-        - script: dotnet build Project 0/Project 0/Project 0.sln
+        - script: dotnet build Project0/Project 0/Project 0.sln
         - task: SonarCloudPrepare@1
           inputs:
             SonarCloud: 'AzureDevOpsSonarCloud'
