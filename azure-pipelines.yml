@@ -23,6 +23,12 @@ stages:
         - task: UseDotNet@2
           inputs:
             packageType: sdk
-            version: 2.1.806
+            version: 3.1.201
         - script: dotnet build 'Project0/Project 0/Project 0.sln'
+            --configuration 'Release'
+        - script: dotnet test
+            --configuration 'Release'
+            --settings coverlet.runsettings
+          workingDirectory: 'Project0/Project 0/Project 0.sln'
+          continueOnError: true
         - task: SonarCloudAnalyze@1
