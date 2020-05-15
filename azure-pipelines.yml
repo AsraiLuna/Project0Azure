@@ -19,9 +19,10 @@ stages:
             scannerMode: 'MSBuild'
             projectKey: 'AsraiLuna_Project0Azure'
             projectName: 'Project0Azure'
-            projectVersion: '3.1.3'
+            projectVersion: '1.0'
         - task: UseDotNet@2
           inputs:
             packageType: sdk
             version: 3.1.201
+        - script: dotnet build 'Project0/Project 0/Project 0.sln'
         - task: SonarCloudAnalyze@1
