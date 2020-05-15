@@ -16,7 +16,6 @@ stages:
           inputs:
             SonarCloud: 'AzureDevOpsSonarCloud'
             organization: 'asrailuna'
-            scannerMode: 'MSBuild'
-            projectKey: 'asrailuna'
-            projectName: 'asrailuna.Project0Azure'
+            scannerMode: 'CLI'
+            configMode: 'file'
         - task: SonarCloudAnalyze@1
